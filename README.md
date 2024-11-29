@@ -19,7 +19,7 @@ Before you start, ensure that the following tools are installed on your machine:
 1. **Clone the project:**  
    Clone this project from GitHub using the following command:  
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/Oni-90/BennuWeatherApp.git
    ```
 
 2. **Navigate to the root directory:**  
