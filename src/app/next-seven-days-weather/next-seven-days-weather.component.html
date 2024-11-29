@@ -1,0 +1,74 @@
+<header>
+    <button (click)="toggleMenu()" class="hamburger">
+      ☰
+    </button>
+    <h3 class="title">Weather Forecast</h3>
+    <ul [class.open]="menuOpen">
+      <li>Lundi</li>
+      <li>Mardi</li>
+      <li>Mercredi</li>
+      <li>Jeudi</li>
+    </ul>
+  </header>
+  
+  <h1 routerLinkActive="active" aria-current="page"><a routerLink="/">&#10094;</a></h1>
+  <h1>Next 7 days</h1>
+  <div class="weekly-forecast">
+    <!-- start section weather info -->
+    <section class="day-weather">
+      <section class="ss1">
+        <span id="span">
+          <span id="sub-span">{{ todayWeather?.startTime | date: 'EEEE' }}</span>&nbsp;&nbsp;
+          <i [class]="todayWeather?.values?.weatherIcon"></i>
+        </span>
+        <span id="span">
+          <span id="sub-span">{{ todayWeather?.values?.temperature }}°C</span>
+        </span>
+      </section>
+
+      <div class="sub-div">
+        <section class="ss2">
+          <span id="span"><span id="sub-div-span">Wind</span>&nbsp;&nbsp; 12m/s</span>
+          <span id="span"><span id="sub-div-span">Humidity</span>&nbsp;&nbsp; 55°C</span>
+        </section>
+  
+        <section class="ss2">
+          <span id="span"><span id="sub-div-span">Visibility</span>&nbsp;&nbsp; 25km</span>
+          <span id="span"><span id="sub-div-span">UV</span>&nbsp;&nbsp;<span id="uv">1</span></span>
+        </section>
+      </div>
+  
+    </section>
+    <!-- end weather info section -->
+
+    <section>
+      
+    </section>
+    
+  </div>
+
+<div>
+  <div *ngIf="weatherData && weatherData.length">
+    <div class="forecast-row" *ngFor="let item of weatherData">
+      <span class="day">{{ item.startTime | date: 'EE' }}</span>
+      <div class="weather-details">
+        <span class="weather-icon">
+          <i class="bi bi-sun"></i>
+        </span>
+        <div class="temp-bar">
+          <span class="temp-values">
+            <span class="low">{{ item.values.temperature }}°C</span>
+          </span>
+          <div class="progress">
+            <div class="progress-bar" [style.width]="getProgressBarWidth(item.values.temperature)"></div>
+            <span class="temp-values">
+            </span>
+          </div>
+          <span class="temp-values">
+            <span class="high">{{ item.values.temperature }}°C</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

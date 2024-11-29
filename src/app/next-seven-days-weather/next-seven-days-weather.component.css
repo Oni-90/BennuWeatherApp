@@ -1,0 +1,122 @@
+.weekly-forecast{
+    display: inline-flex;
+    width: 90%;
+    height: auto;
+    /* padding: 10px; */
+    justify-content: center;
+}
+
+/*weather info card base style*/
+.day-weather{
+    display: inline-block;
+    padding: 10px;
+    padding-inline: 2vh;
+    width: 35vh;
+    height: 15vh;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 2vh;
+}
+
+/* icon style*/
+.bi-cloud-sun-fill{
+    color: var(--swatch_4);
+    font-size: 22px;
+}
+/*ss1 sub span style*/
+#sub-span{
+    font-size: 24px;
+}
+
+/*sub sections 1 & sud div common style */
+.ss1,.sud-div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+}
+
+/* sub section 2 style*/
+.ss2{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding-bottom: 1vh;
+}
+
+
+#uv{
+    padding-left: 6.3vh;
+}
+
+
+/* Principal container*/
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .forecast-row .day {
+    font-size: 1rem;
+    font-weight: bold;
+    color:var(--swatch_2);
+    flex: 1; /*take more place to the left*/
+  }
+  
+  /* weather details style*/
+  .weather-details {
+    display: flex;
+    align-items: center;
+    flex: 3; 
+  }
+  
+  /* weather icon */
+  .weather-icon i {
+    font-size: 1.5rem;
+    color: yellow; /*icon color*/
+    margin-right: 10px;
+  }
+  
+  .temp-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  
+  .progress {
+    flex: 3;
+    height: 3vh;
+    background-color: #ddd; 
+    border-radius: 4vh;
+    overflow: hidden;
+    position: relative;
+    direction: rtl;
+    /* margin-right: 10px; */
+    margin: 2vh;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #ff5722; 
+    border-radius: 3px;
+    transition: width 0.3s ease; /*animation when width change */
+  }
+  
+  .temp-values {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  .temp-values .low {
+    color: var(--swatch_5);
+  }
+  
+  .temp-values .high {
+    color: var(--swatch_2);
+  }
+  

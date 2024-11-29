@@ -1,27 +1,60 @@
 # BennuWeatherApp
 
+This project is an Angular application that displays weather data based on your current location.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before you start, ensure that the following tools are installed on your machine:
 
-## Code scaffolding
+1. **Node.js:** Download and install Node.js from [https://nodejs.org](https://nodejs.org).  
+2. **Angular CLI:** Install the Angular CLI globally by running the following command:  
+   ```bash
+   npm install -g @angular/cli
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation and Setup
 
-## Build
+1. **Clone the project:**  
+   Clone this project from GitHub using the following command:  
+   ```bash
+   git clone <repository-link>
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Navigate to the root directory:**  
+   After cloning, open a terminal and navigate to the project's root directory:  
+   ```bash
+   cd BennuWeatherApp
+   ```
 
-## Running unit tests
+3. **Install dependencies:**  
+   Install the required dependencies by running:  
+   ```bash
+   ng install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. **Start the project:**  
+   Once the installation is complete, start the development server by running:  
+   ```bash
+   ng serve
+   ```
 
-## Running end-to-end tests
+5. **Access the application:**  
+   After the server starts, a link similar to this will be displayed:  
+   ```
+   http://localhost:4200/
+   ```
+   Copy this link (`Ctrl+Shift+C`) and paste it into your browser's address bar.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+6. **Enable location access:**  
+   The application will ask you to enable your location. This is required to fetch weather data for your current position.
 
-## Further help
+7. **View the interface:**  
+   After enabling location access, you should see the interface displaying the retrieved weather data.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Thank You
+
+Thank you for using **BennuWeatherApp**! If you have any questions or feedback, feel free to share them.
+
+---
