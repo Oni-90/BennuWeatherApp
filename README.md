@@ -53,6 +53,14 @@ Before you start, ensure that the following tools are installed on your machine:
 7. **View the interface:**  
    After enabling location access, you should see the interface displaying the retrieved weather data.
 
+      ## Here are some images of the result
+      ![BennuWeatherApp](Mobile_view_first_page.png)
+      ![BennuWeatherApp](Mobile_view_second_page.png)
+
+      ![BennuWeatherApp](Web_view_first_page.png)
+      ![BennuWeatherApp](Web_view_second_page.png)
+
+
 ## Thank You
 
 Thank you for using **BennuWeatherApp**! If you have any questions or feedback, feel free to share them.
