@@ -73,7 +73,7 @@ export class NextSevenDaysWeatherComponent {
     const today = new Date();
     const day = today.getDay();
     const date = today.getDate();
-    const month = today.getMonth() + 1; // Months are zero-based
+    const month = today.getMonth(); // Months are zero-based
 
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
