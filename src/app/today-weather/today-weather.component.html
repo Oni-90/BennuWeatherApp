@@ -1,0 +1,45 @@
+<header>
+    <button (click)="toggleMenu()" class="hamburger">
+      ☰
+    </button>
+    <h3 class="title">Weather Forecast</h3>
+    <ul [class.open]="menuOpen">
+      <li>Lundi</li>
+      <li>Mardi</li>
+      <li>Mercredi</li>
+      <li>Jeudi</li>
+    </ul>
+  </header>
+  
+  <div class="weather-info">
+    <div class="icon-and-today">
+      <i class="bi bi-sun"></i>
+      <h1>Today</h1>
+    </div>
+    <h5>{{ getdayAndMonth() }}</h5>
+    <h1>{{ currentTemperature }}°C</h1>
+    <p>{{ currentCity }}</p>
+    <p class="details">Feels like 32 · Sunset 20:15</p>
+  </div>
+  
+  <section class="section">
+    <span class="day-weather">Today</span>
+    <span class="day-weather">Tomorrow</span>
+    <span class="day-weather" routerLinkActive="active" aria-current="page">
+      <a routerLink="next-day">Next 7 Days</a>
+    </span>
+  </section>
+  
+  <section class="hourly-forecast" *ngIf="weatherData && weatherData.intervals?.length">
+    <div class="forecast-time " *ngFor="let item of weatherData.intervals" [ngClass]="{'active': isCurrentTime(item.startTime)}">
+      <p>{{ getHours(item.startTime) }}</p>
+      <i class="bi bi-sun"></i>
+      <p>{{ item.values.temperature}}°C</p>
+    </div>
+    
+  </section>
+  
+  <div class="chart-container">
+    <canvas id="rainChart"></canvas>
+  </div>
+  

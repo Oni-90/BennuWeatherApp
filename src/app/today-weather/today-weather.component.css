@@ -1,0 +1,119 @@
+  .weather-info {
+    text-align: center;
+    margin-top: 20px; /*space between title en weather info*/
+  }
+
+  /* icon and today text on same line*/
+.icon-and-today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .icon-and-today i {
+    font-size: 50px; /* icon size*/
+    color: var(--swatch_1); /* icon color */
+  }
+  
+  .icon-and-today h1 {
+    font-size: 32px;
+    margin: 0;
+    color: var(--swatch_3);
+  }
+  
+  /* Date, weather, and position style */
+  .weather-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: var(--swatch_3);
+  }
+  .weather-info h5 {
+    margin-top: 0px;
+    margin-left: 6vh;
+    font-size: 18px;
+    color: var(--swatch_3);
+  }
+  
+  .weather-info h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: var(--swatch_3);
+  }
+  
+  .weather-info p {
+    font-size: 16px;
+    color: var(--swatch_3);
+  }
+
+  /* temperature  style*/
+.temperature {
+    display: inline-flex; 
+    align-items: flex-start; 
+    justify-content: center;
+    position: relative;
+    font-size: 48px; 
+    line-height: 1; 
+  }
+  
+  .temperature .number {
+    font-size: 72px; 
+    font-weight: bold;
+    color: var(--swatch_3);
+  }
+  
+  .temperature .degree {
+    font-size: 24px; 
+    font-weight: normal;
+    color: var(--swatch_3);
+    position: relative;
+    top: -10px; 
+    margin-left: 5px; /* space betwenn number and the °C */
+  }
+
+  .section {
+    display: flex;
+    margin-top: 20px;
+    color: var(--swatch_3);
+    justify-content: center;
+    align-items: center;
+  }
+  .day-weather{
+    margin: 3vh;
+  }
+
+  /* Hourly forecast */
+.hourly-forecast {
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 0;
+  }
+  
+  .forecast-time {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);;
+    border-radius: 10vh;
+    padding: 1vh;
+    margin-inline: 0.5vh;
+    width: 13%;
+    color: var(--swatch_3);
+  }
+  
+ .active {
+    background-color: var(--swatch_3);
+    border-radius: 10vh;
+    color: var(--swatch_2);
+    transform: translateY(-3vh);
+    padding: 1vh;
+  }
+
+  .chart-container {
+    width: 100%;
+    max-width: 400vh;
+    margin: auto;
+  }
+  canvas {
+    background-color: var(--swatch_6); 
+  }
+  
+  
